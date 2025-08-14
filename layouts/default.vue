@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="relative overflow-hidden mb-4 fixed top-0 left-0 w-full z-50 bg-white">
+        <header class="block mb-4 fixed top-0 left-0 w-full z-50 bg-white">
             <nav>
                 <div class="w-full py-4 md:py-3 shadow-xl"> <!-- Уменьшил padding для средних экранов -->
                     <div class="flex justify-between px-4 md:px-8 lg:px-20 items-center font-semibold">
