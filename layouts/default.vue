@@ -11,7 +11,7 @@
                         <!-- bg-gradient-to-r from-blue-300 to-red-300 -->
 
                         <!-- Десктопное меню -->
-                        <div class="hidden md:flex xl:gap-10 md:gap-8 gap-2">
+                        <div class="hidden md:flex  xl:gap-10 md:gap-8 gap-2">
                             <NuxtLink to="#teachers" class="hover-text underline-hover-container transition-colors">Наши
                                 преподаватели</NuxtLink>
                             <NuxtLink to="#rating" class="hover-text underline-hover-container transition-colors">Отзывы
@@ -23,7 +23,7 @@
                         </div>
 
                         <!-- Кнопка "Связаться" -->
-                        <div class="hidden md:block">
+                        <div class="hidden md:flex">
                             <NuxtLink to="https://wa.me/c/79143348185" target="_blank"
                                 class="transition duration-300 px-8 py-3 bg-white text-black select-none cursor-default text-xl border-2 border-black font-semibold hover:bg-black hover:text-white">
                                 Связаться с нами
