@@ -16,10 +16,7 @@
                                 class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
                                 Наши преподаватели
                             </NuxtLink>
-                            <NuxtLink to="#rating"
-                                class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
-                                Отзывы
-                            </NuxtLink>
+
                             <NuxtLink to="#about"
                                 class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
                                 О нас
