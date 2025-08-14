@@ -1,31 +1,39 @@
 <template>
     <div>
-        <header class="mb-4 fixed top-0 left-0 w-full z-50 bg-white">
+        <header class="relative overflow-hidden mb-4 fixed top-0 left-0 w-full z-50 bg-white">
             <nav>
-                <div class=" w-full py-6 shadow-xl">
-                    <div class="flex justify-between px-4 md:px-20 items-center font-semibold">
+                <div class="w-full py-4 md:py-3 shadow-xl"> <!-- Уменьшил padding для средних экранов -->
+                    <div class="flex justify-between px-4 md:px-8 lg:px-20 items-center font-semibold">
+                        <!-- Адаптивные отступы -->
                         <div>
-                            <NuxtLink to="/" class="text-4xl font-medium py-1 px-2">DLC</NuxtLink>
+                            <NuxtLink to="/" class="text-3xl md:text-4xl font-medium py-1 px-2">DLC</NuxtLink>
+                            <!-- Уменьшил размер лого -->
                         </div>
 
-                        <!-- bg-gradient-to-r from-blue-300 to-red-300 -->
-
                         <!-- Десктопное меню -->
-                        <div class="hidden md:flex  xl:gap-10 md:gap-8 gap-2">
-                            <NuxtLink to="#teachers" class="hover-text underline-hover-container transition-colors">Наши
-                                преподаватели</NuxtLink>
-                            <NuxtLink to="#rating" class="hover-text underline-hover-container transition-colors">Отзывы
+                        <div class="hidden md:flex md:gap-4 lg:gap-8 xl:gap-10"> <!-- Адаптивные промежутки -->
+                            <NuxtLink to="#teachers"
+                                class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
+                                Наши преподаватели
                             </NuxtLink>
-                            <NuxtLink to="#about" class="hover-text underline-hover-container transition-colors">О нас
+                            <NuxtLink to="#rating"
+                                class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
+                                Отзывы
                             </NuxtLink>
-                            <NuxtLink to="#services" class="hover-text underline-hover-container transition-colors">
-                                Курсы</NuxtLink>
+                            <NuxtLink to="#about"
+                                class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
+                                О нас
+                            </NuxtLink>
+                            <NuxtLink to="#services"
+                                class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
+                                Курсы
+                            </NuxtLink>
                         </div>
 
                         <!-- Кнопка "Связаться" -->
                         <div class="hidden md:flex">
                             <NuxtLink to="https://wa.me/c/79143348185" target="_blank"
-                                class="transition duration-300 px-8 py-3 bg-white text-black select-none cursor-default text-xl border-2 border-black font-semibold hover:bg-black hover:text-white">
+                                class="transition duration-300 px-6 py-2 lg:px-8 lg:py-3 bg-white text-black select-none cursor-default text-sm lg:text-xl border-2 border-black font-semibold hover:bg-black hover:text-white">
                                 Связаться с нами
                             </NuxtLink>
                         </div>
@@ -37,8 +45,6 @@
                                 <span v-else key="close">✕</span>
                             </transition>
                         </button>
-
-
                     </div>
 
                     <!-- Мобильное меню с анимацией -->
@@ -54,8 +60,7 @@
                                         @click="closeMenu">Отзывы</NuxtLink>
                                     <hr class="border-b border-gray-800">
                                     <NuxtLink to="#about" class="block py-2 hover:text-gray-600 transition-colors"
-                                        @click="closeMenu">О
-                                        нас</NuxtLink>
+                                        @click="closeMenu">О нас</NuxtLink>
                                     <hr class="border-b border-gray-800">
                                     <NuxtLink to="#services" class="block py-2 hover:text-gray-600 transition-colors"
                                         @click="closeMenu">Курсы</NuxtLink>
