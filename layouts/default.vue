@@ -181,9 +181,9 @@
                                     <li class="mt-[15px]"><a
                                             class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                             href="#teachers">Наши преподаватели</a></li>
-                                    <li class="mt-[15px]"><a
+                                    <!-- <li class="mt-[15px]"><a
                                             class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                            href="#rating">Отзывы</a></li>
+                                            href="#rating">Отзывы</a></li> -->
                                     <li class="mt-[15px]"><a
                                             class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                             href="#about">О нас</a></li>
