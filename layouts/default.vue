@@ -2,21 +2,17 @@
     <div>
         <header class="block mb-4 fixed top-0 left-0 w-full z-50 bg-white">
             <nav>
-                <div class="w-full py-4 md:py-3 shadow-xl"> <!-- Уменьшил padding для средних экранов -->
+                <div class="w-full py-4 md:py-3 shadow-xl">
                     <div class="flex justify-between px-4 md:px-8 lg:px-20 items-center font-semibold">
-                        <!-- Адаптивные отступы -->
-                        <div>
-                            <NuxtLink to="/" class="text-3xl md:text-4xl font-medium py-1 px-2">DLC</NuxtLink>
-                            <!-- Уменьшил размер лого -->
-                        </div>
+                        <!-- Логотип -->
+                        <NuxtLink to="/" class="text-3xl md:text-4xl font-medium py-1 px-2 z-50">DLC</NuxtLink>
 
                         <!-- Десктопное меню -->
-                        <div class="hidden md:flex md:gap-4 lg:gap-8 xl:gap-10"> <!-- Адаптивные промежутки -->
+                        <div class="hidden md:flex md:gap-4 lg:gap-8 xl:gap-10">
                             <NuxtLink to="#teachers"
                                 class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
                                 Наши преподаватели
                             </NuxtLink>
-
                             <NuxtLink to="#about"
                                 class="hover-text underline-hover-container transition-colors text-sm lg:text-base">
                                 О нас
@@ -30,40 +26,63 @@
                         <!-- Кнопка "Связаться" -->
                         <div class="hidden md:flex">
                             <NuxtLink to="https://wa.me/c/79143348185" target="_blank"
-                                class="transition duration-300 px-6 py-2 lg:px-8 lg:py-3 bg-white text-black select-none cursor-default text-sm lg:text-xl border-2 border-black font-semibold hover:bg-black hover:text-white">
+                                class="transition duration-300 px-6 py-2 lg:px-8 lg:py-3 bg-white text-black select-none text-sm lg:text-xl border-2 border-black font-semibold hover:bg-black hover:text-white">
                                 Связаться с нами
                             </NuxtLink>
                         </div>
 
-                        <!-- Бургер-кнопка -->
-                        <button @click="toggleMenu" class="md:hidden text-3xl focus:outline-none">
+                        <!-- Бургер-кнопка с анимацией в крестик -->
+                        <button @click="toggleMenu" class="md:hidden w-8 h-8 focus:outline-none z-50">
                             <transition name="fade" mode="out-in">
-                                <span v-if="!isMenuOpen" key="open">☰</span>
-                                <span v-else key="close">✕</span>
+                                <span v-if="!isMenuOpen" key="menu" class="block text-3xl">☰</span>
+                                <span v-else key="close" class="block text-3xl">✕</span>
                             </transition>
                         </button>
                     </div>
 
-                    <!-- Мобильное меню с анимацией -->
-                    <transition name="slide" @enter="startTransition" @after-enter="endTransition"
-                        @before-leave="startTransition" @after-leave="endTransition">
-                        <div v-if="isMenuOpen" class="md:hidden overflow-hidden">
-                            <div class="px-4 pt-6 bg-white shadow-lg">
-                                <div class="flex flex-col gap-4">
-                                    <NuxtLink to="/" class="block py-2 hover:text-gray-600 transition-colors"
-                                        @click="closeMenu">Главная</NuxtLink>
-                                    <hr class="border-b border-gray-800">
-                                    <NuxtLink to="#rating" class="block py-2 hover:text-gray-600 transition-colors"
-                                        @click="closeMenu">Отзывы</NuxtLink>
-                                    <hr class="border-b border-gray-800">
-                                    <NuxtLink to="#about" class="block py-2 hover:text-gray-600 transition-colors"
-                                        @click="closeMenu">О нас</NuxtLink>
-                                    <hr class="border-b border-gray-800">
-                                    <NuxtLink to="#services" class="block py-2 hover:text-gray-600 transition-colors"
-                                        @click="closeMenu">Курсы</NuxtLink>
-                                    <hr class="border-b border-gray-800">
+                    <!-- Мобильное меню с анимацией сверху -->
+                    <transition name="slide-down">
+                        <div v-if="isMenuOpen" class="md:hidden fixed inset-0 z-40">
+                            <!-- Затемнение фона (начинается ниже логотипа) -->
+                            <div class="absolute inset-0 bg-black bg-opacity-50 mt-16" @click="closeMenu"></div>
+
+                            <!-- Контент меню (начинается ниже логотипа) -->
+                            <div
+                                class="absolute top-16 left-0 right-0 bg-white shadow-xl rounded-b-2xl overflow-hidden z-40">
+                                <div class="p-6">
+                                    <!-- Навигация -->
+                                    <nav class="space-y-4">
+                                        <NuxtLink to="/"
+                                            class="block text-xl font-medium py-3 px-4 hover:bg-gray-100 rounded-lg transition-colors"
+                                            @click.native="closeMenu">
+                                            Главная
+                                        </NuxtLink>
+                                        <hr class="border-b border-gray-800">
+                                        <NuxtLink to="#teachers"
+                                            class="block text-xl font-medium py-3 px-4 hover:bg-gray-100 rounded-lg transition-colors"
+                                            @click.native="closeMenu">
+                                            Наши преподаватели
+                                        </NuxtLink>
+                                        <hr class="border-b border-gray-800">
+                                        <NuxtLink to="#about"
+                                            class="block text-xl font-medium py-3 px-4 hover:bg-gray-100 rounded-lg transition-colors"
+                                            @click.native="closeMenu">
+                                            О нас
+                                        </NuxtLink>
+                                        <hr class="border-b border-gray-800">
+
+                                        <NuxtLink to="#services"
+                                            class="block text-xl font-medium py-3 px-4 hover:bg-gray-100 rounded-lg transition-colors"
+                                            @click.native="closeMenu">
+                                            Курсы
+                                        </NuxtLink>
+                                        <hr class="border-b border-gray-800">
+                                    </nav>
+
+                                    <!-- Кнопка связи -->
                                     <NuxtLink to="https://wa.me/c/79143348185" target="_blank"
-                                        class="w-full px-4 mt-4 py-3 bg-black text-white text-xl font-semibold hover:bg-gray-800 transition-colors">
+                                        class="mt-6 w-full px-6 py-4 bg-black text-white text-xl font-semibold text-center hover:bg-gray-800 transition-colors rounded-lg block"
+                                        @click.native="closeMenu">
                                         Связаться с нами
                                     </NuxtLink>
                                 </div>
@@ -107,12 +126,26 @@
                                             fill="white" />
                                     </svg>
                                 </NuxtLink>
-                                <!-- <a class="hover:scale-110" target="_blank" href="/"><img alt="instagram icon"
-                                        loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                                        style="color:transparent"
-                                        src="https://www.englishyaari.com/img/instagram1.svg" />
-                                </a>
-                                <a class="hover:scale-110" target="_blank" href=""><img alt="twitter icon"
+                                <NuxtLink to="https://taplink.cc/dlc_studio.ndg" class="hover:scale-110"
+                                    target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Квадрат с тонкой рамкой -->
+                                        <rect x="2" y="2" width="20" height="20" fill="none" stroke="white"
+                                            stroke-width="1" rx="1" />
+
+                                        <!-- Буква T -->
+                                        <rect x="4" y="6" width="10" height="2" fill="white" rx="0.5" />
+                                        <!-- Верхняя перекладина (укороченная) -->
+                                        <rect x="8" y="7" width="2" height="11" fill="white" rx="0.5" /> <!-- Ножка -->
+
+                                        <!-- Буква L -->
+                                        <rect x="14" y="6" width="2" height="12" fill="white" rx="0.5" />
+                                        <!-- Вертикаль -->
+                                        <rect x="16" y="16" width="4" height="2" fill="white" rx="0.5" />
+                                        <!-- Горизонталь -->
+                                    </svg>
+                                </NuxtLink>
+                                <!-- <a class="hover:scale-110" target="_blank" href=""><img alt="twitter icon"
                                         loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
                                         style="color:transparent" src="https://www.englishyaari.com/img/twitter.svg" />
                                 </a>
@@ -120,7 +153,7 @@
                                         alt="youtube icon" loading="lazy" width="36" height="36" decoding="async"
                                         data-nimg="1" style="color:transparent"
                                         src="https://www.englishyaari.com/img/youtube.svg" />
-                                </a> -->
+                                </a>  -->
                             </div>
                         </div>
                         <div class="md:w-[316px]">
@@ -178,21 +211,29 @@
                                 <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Студия
                                 </p>
                                 <ul>
-                                    <li class="mt-[15px]"><a
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                            href="#teachers">Наши преподаватели</a></li>
+                                    <li class="mt-[15px]">
+                                        <NuxtLink to="#teachers"
+                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
+                                            Наши преподаватели</NuxtLink>
+                                    </li>
                                     <!-- <li class="mt-[15px]"><a
                                             class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
                                             href="#rating">Отзывы</a></li> -->
-                                    <li class="mt-[15px]"><a
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                            href="#about">О нас</a></li>
-                                    <li class="mt-[15px]"><a
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                            href="#services">Курсы</a></li>
-                                    <li class="mt-[15px]"><a
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                            href="/privacy">Политика конфедициальности</a></li>
+                                    <li class="mt-[15px]">
+                                        <NuxtLink to="#about"
+                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
+                                            О нас</NuxtLink>
+                                    </li>
+                                    <li class="mt-[15px]">
+                                        <NuxtLink to="#services"
+                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
+                                            Курсы</NuxtLink>
+                                    </li>
+                                    <li class="mt-[15px]">
+                                        <NuxtLink to="/privacy"
+                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
+                                            Политика конфедициальности</NuxtLink>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -218,32 +259,59 @@
 export default {
     data() {
         return {
-            isMenuOpen: false,
-            isTransitioning: false,
-
+            isMenuOpen: false
         }
     },
     methods: {
         toggleMenu() {
-
-            if (!this.isTransitioning) {
-                this.isMenuOpen = !this.isMenuOpen
+            this.isMenuOpen = !this.isMenuOpen
+            if (this.isMenuOpen) {
+                document.body.style.overflow = 'hidden'
+            } else {
+                document.body.style.overflow = ''
             }
-
         },
-
+        closeMenu() {
+            this.isMenuOpen = false
+            document.body.style.overflow = ''
+        }
     }
-
 }
-
-
-
-
-
 </script>
 
+
+
 <style>
-/* Анимация бургер-кнопки */
+/* Анимация выезжания сверху (только для контента меню) */
+.slide-down-enter-active .absolute,
+.slide-down-leave-active .absolute {
+    transition: all 0.4s ease;
+}
+
+.slide-down-enter .absolute,
+.slide-down-leave-to .absolute {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.slide-down-enter-to .absolute,
+.slide-down-leave .absolute {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Анимация затемнения фона */
+.slide-down-enter-active .bg-opacity-50,
+.slide-down-leave-active .bg-opacity-50 {
+    transition: opacity 0.3s ease;
+}
+
+.slide-down-enter .bg-opacity-50,
+.slide-down-leave-to .bg-opacity-50 {
+    opacity: 0;
+}
+
+/* Анимация перехода бургер-крестик */
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 0.2s ease;
@@ -254,27 +322,37 @@ export default {
     opacity: 0;
 }
 
-/* Анимация выезжающего меню */
-.slide-enter-active,
-.slide-leave-active {
-    transition: max-height 0.5s ease-in-out;
+/* Эффекты для ссылок */
+.hover-text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
 }
 
-.slide-enter,
-.slide-leave-to {
-    max-height: 0;
+.hover-text:hover::after {
+    width: 100%;
 }
 
-.slide-enter-to,
-.slide-leave {
-    max-height: 500px;
-    /* Подберите значение под ваш контент */
-}
-
-/* Плавные hover-эффекты */
+/* Плавные переходы */
 .transition-colors {
     transition: color 0.2s ease, background-color 0.2s ease;
 }
+
+/* Фикс для z-index */
+.z-50 {
+    z-index: 50;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+
 
 
 

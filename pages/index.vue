@@ -18,9 +18,9 @@
 
 
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <NuxtLink to="https://wa.me/c/79143348185"
+                        <NuxtLink to="https://taplink.cc/dlc_studio.ndg"
                             class="px-12 py-6 text-white text-xl bg-gradient-to-r from-purple-600 to-pink-500 click:brightness-110 hover:brightness-110 rounded-xl font-semibold transition-transform transform hover:scale-105 shadow-md">
-                            Узнать подробнее
+                            Записаться на курс
                         </NuxtLink>
                     </div>
 
@@ -87,7 +87,7 @@
                             <div class="p-6 text-center">
                                 <h3 class="text-xl font-medium text-gray-800 mb-2 italic">Отделение Английского языка
                                 </h3>
-                                <p class="text-gray-700 text-base">*Помощь в описании</p>
+                                <p class="text-gray-700 text-base"></p>
                             </div>
                         </div>
 
@@ -110,7 +110,7 @@
                             <div class="p-6 text-center">
                                 <h3 class="text-xl font-medium text-gray-800 mb-2"><span class="italic">"Adults"</span>
                                     Английский для взрослых</h3>
-                                <p class="text-gray-700 text-base">*Помощь в описании
+                                <p class="text-gray-700 text-base">
                                 </p>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                             </NuxtLink>
                             <div class="p-6 text-center">
                                 <h3 class="text-xl font-medium text-gray-800 mb-2 italic">Школа раннего развития</h3>
-                                <p class="text-gray-700 text-base">*Помощь в описании</p>
+                                <p class="text-gray-700 text-base"></p>
                             </div>
                         </div>
                         <!-- Карточка 6 -->
@@ -178,7 +178,7 @@
                             </NuxtLink>
                             <div class="p-6 text-center">
                                 <h3 class="text-xl font-medium text-gray-800 mb-2 italic">Летнии курсы</h3>
-                                <p class="text-gray-700 text-base">*Помощь в описании</p>
+                                <p class="text-gray-700 text-base"></p>
                             </div>
                         </div>
                         <!-- карточка 7 -->
@@ -243,7 +243,7 @@
                     </h1>
                     <br>
                     <p class="text-xl leading-[27px] text-gray-700  font-normal sm:text-[24px] mb-8 md:mb-12">
-                        Наша студия работает с 2011 года. Мы знаем все тонкости обучения и выбираем лучших
+                        Наша студия работает с 2010 года. Мы знаем все тонкости обучения и выбираем лучших
                         преподавателей для своих студентов.
 
                     </p>

@@ -95,23 +95,23 @@ const teachers = [
     {
         name: 'Ольга Алексеевна',
         avatar: '/images/teachers/olgateachers.jpg',
-        specialization: 'Директор студии',
+        specialization: 'Директор и основатель студии',
         description: 'Преподаватель Английского языка высшей категории. Эксперт ЕГЭ и ОГЭ.',
-        experience: 12
+        experience: 15
     },
     {
         name: 'Наталья Александровна',
         avatar: '/images/teachers/natalya.jpg',
-        specialization: 'Детский психолог, Гештальт - терапевт',
+        specialization: 'Детский психолог, гештальт-терапевт, нейропсихолог, психолог-педагог, арт-терапевт',
         description: 'Специалист по детско - родительским отношениям. Преподаватель школы раннего развития.',
-        experience: 5
+        experience: 10
     },
     {
-        name: 'Анна Андреевна',
-        avatar: '/images/teachers/anna.jpg',
-        specialization: 'Английский язык',
-        description: 'Преподаватель Английского языка. ',
-        experience: 5
+        name: 'Мирослава Демьяновна',
+        avatar: '/images/teachers/admin.jpg',
+        specialization: 'администратор студии',
+        description: '',
+        experience: 3
     },
     {
         name: 'Дарья Игоревна',
@@ -120,13 +120,6 @@ const teachers = [
         description: 'Преподаватель арт - мастерской "Волшебный сундучок".',
         experience: 5
     },
-    {
-        name: 'Мария Юрьевна',
-        avatar: '/images/teachers/maria.jpg',
-        specialization: 'Преподаватель - стажёр',
-        description: 'Преподаватель - стажёр начальных классов, DLC - продлёнка.',
-        experience: 5
-    }
 ]
 
 const activeIndex = ref(1)
