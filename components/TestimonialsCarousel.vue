@@ -109,7 +109,7 @@ const teachers = [
     {
         name: 'Мирослава Демьяновна',
         avatar: '/images/teachers/admin.jpg',
-        specialization: 'администратор студии',
+        specialization: 'Администратор студии',
         description: '',
         experience: 3
     },
