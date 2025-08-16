@@ -21,7 +21,8 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'canonical', href: 'https://dlc-studio.vercel.app/' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, // Favicon
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icon-32x32.png' }, // Favicon
       ]
     }
   }
