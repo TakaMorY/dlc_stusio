@@ -30,7 +30,7 @@
 
 
                 <div class="flex-1 flex justify-center animate-float">
-                    <img src="~\assets\images\logo.jpg" alt="Logo" class="w-76 h-76 object-cover" />
+                    <img src="\images\tovars\logo.jpg" alt="Logo" class="w-76 h-76 object-cover" />
                 </div>
             </div>
         </section>
@@ -47,7 +47,7 @@
                         <!-- Карточка 1 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/8026492284116732/79143348185" class="relative group">
-                                <img src="~\assets\images\prodlenka.jpg" alt="prodlenkaphoto"
+                                <img src="\images\tovars\prodlenka.jpg" alt="prodlenkaphoto"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -71,7 +71,7 @@
                         <!-- Карточка 2 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/8264442663676230/79143348185" class="relative group">
-                                <img src="~\assets\images\english.jpg" alt="englishphoto"
+                                <img src="\images\tovars\english.jpg" alt="englishphoto"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -94,7 +94,7 @@
                         <!-- Карточка 3 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/8301684446553594/79143348185" class="relative group">
-                                <img src="~\assets\images\bigenglish.jpg" alt="bigenglishphoto"
+                                <img src="\images\tovars\bigenglish.jpg" alt="bigenglishphoto"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -117,7 +117,7 @@
                         <!-- Карточка 4 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/26967991189482934/79143348185" class="relative group">
-                                <img src="~\assets\images\sunduk.jpg" alt="sundukphoto"
+                                <img src="\images\tovars\sunduk.jpg" alt="sundukphoto"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -142,7 +142,7 @@
                         <!-- Карточка 5 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/8243289065739646/79143348185" class="relative group">
-                                <img src="~\assets\images\academy.jpg" alt="academyphoto"
+                                <img src="\images\tovars\academy.jpg" alt="academyphoto"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -163,7 +163,7 @@
                         <!-- Карточка 6 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/8561121723937394/79143348185" class="relative group">
-                                <img src="~\assets\images\summer.jpg" alt="summerphoto"
+                                <img src="\images\tovars\summer.jpg" alt="summerphoto"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -184,7 +184,7 @@
                         <!-- карточка 7 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/8339549749457198/79143348185" class="relative group">
-                                <img src="~\assets\images\psyco.jpg" alt="psycophoto"
+                                <img src="\images\tovars\psyco.jpg" alt="psycophoto"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -205,7 +205,7 @@
                         <!-- карточка 8 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <NuxtLink to="https://wa.me/p/8587793581285998/79143348185" class="relative group">
-                                <img src="~\assets\images\school.jpg" alt="Lorem Ipsum"
+                                <img src="\images\tovars\school.jpg" alt="Lorem Ipsum"
                                     class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
                                 <!-- Черный круг со стрелкой -->
                                 <div
@@ -235,7 +235,7 @@
             <div
                 class="border-b border-gray-400 w-full bg-white flex flex-col lg:flex-row  items-center  py-6 sm:py-9 md:py-11 lg:py-14  px-2  sm:px-4 md:px-8 xl:px-16">
                 <img class="w-full lg:w-1/2 xl:w-full max-w-[550px] lg:order-2 rounded-full"
-                    src="~\assets\images\olga.jpg" alt="teacher">
+                    src="\images\tovars\olga.jpg" alt="teacher">
                 <div class="text-center md:text-left">
                     <h1
                         class="text-gray-800 text-4xl leading-[48px] md:text-5xl md:leading-[58px] lg:text-[50px] lg:leading-[70px] font-bold mb-6 md:mb-12">
