@@ -10,23 +10,49 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'DLC — студия дополнительного образования',
+      title: 'DLC - студия дополнительного образования',
       meta: [
         {
           name: 'description',
-          content: 'DLC — английский язык, школа раннего развития, поготовка к школе и продлёнка.'
+          content: 'DLC - английский язык, школа раннего развития, подготовка к школе и продлёнка.'
         },
-        { name: 'description', content: 'DLC — английский язык, школа раннего развития, поготовка к школе и продлёнка.', key: 'desc' },
-        { name: 'keywords', content: 'dlc,DLC,dlc надежденск ,Надежденкс,DLC Надежденск, Английский Надежденск, Английский, дошколка, разивашка Надежденск, развитие детей, посёлок Надежденкс, Надежденский, образование, dlc образование dlc studio' },
-        { property: 'og:title', content: 'DLC — студия дополнительного образования' },
-        { property: 'og:description', content: 'DLC — английский язык, школа раннего развития, поготовка к школе и продлёнка.' },
-        { property: 'og:image', content: 'https://dlc-studio.vercel.app/og/og-image.jpg' },
-        { property: 'og:url', content: 'https://dlc-studio.vercel.app/' },
+        {
+          name: 'keywords',
+          content: 'dlc, DLC, dlc надежденск, Надежденск, DLC Надежденск, Английский Надежденск, Английский, вдс-ыегвшщ, длс студия, студия английский длс'
+        },
+        {
+          property: 'og:title',
+          content: 'DLC - студия дополнительного образования'
+        },
+        {
+          property: 'og:description',
+          content: 'DLC - английский язык, школа раннего развития, подготовка к школе и продлёнка.'
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.dlc-studio.ru/og/og-image.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.dlc-studio.ru/'
+        }
       ],
       link: [
-        { rel: 'canonical', href: 'https://dlc-studio.vercel.app/' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icon-32x32.png' }, // Favicon
+        {
+          rel: 'canonical',
+          href: 'https://www.dlc-studio.ru/'
+        },
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/favicon.ico'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/icon-32x32.png'
+        }
       ]
     }
   }
