@@ -1,6 +1,6 @@
 <template>
     <section
-        class="min-h-screen w-full flex items-center justify-center relative overflow-hidden ">
+        class="min-h-screen w-full flex items-center justify-center relative overflow-hidden py-12">
         <!-- Фоновые элементы -->
         <div class="absolute inset-0 z-0 opacity-50">
             <div class="absolute top-10 left-10 w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply animate-pulse">
