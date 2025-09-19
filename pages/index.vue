@@ -45,28 +45,7 @@
                     <h2 class="text-5xl font-bold text-white mb-12 text-center italic">Наши курсы</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- Карточка 1 -->
-                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                            <NuxtLink to="https://wa.me/p/8026492284116732/79143348185" class="relative group">
-                                <img src="\images\tovars\prodlenka.jpg" alt="prodlenkaphoto"
-                                    class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
-                                <!-- Черный круг со стрелкой -->
-                                <div
-                                    class="absolute top-3 right-3 w-8 h-8 bg-pink-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white"
-                                        viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                            clip-rule="evenodd" transform="rotate(-45 10 10)" />
-                                    </svg>
-                                </div>
-                            </NuxtLink>
-                            <div class="p-6 text-center">
-                                <h3 class="text-xl font-medium text-gray-800 mb-2">Курс <span class="italic">"DLC
-                                        Продлёнка"</span></h3>
-                                <p class="text-gray-700 text-base">Группа продлённого дня для школьников 1 - 4 классов.
-                                </p>
-                            </div>
-                        </div>
+
 
                         <!-- Карточка 2 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
