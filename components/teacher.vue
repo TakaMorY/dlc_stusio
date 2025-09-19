@@ -43,12 +43,12 @@
                 <div class="text-center md:text-left mt-8 lg:mt-0 lg:mr-12">
                     <h1 class="text-gray-800 text-4xl leading-[48px] md:text-5xl md:leading-[58px] lg:text-[50px] lg:leading-[70px] font-bold mb-6 md:mb-12 transform transition-all duration-700 delay-150"
                         :class="isInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'">
-                        Студия, созданная преподавателем
+                        Школа, созданная преподавателем
                     </h1>
 
                     <p class="text-xl leading-[27px] text-gray-700 font-normal sm:text-[24px] mb-8 md:mb-12 transform transition-all duration-700 delay-300"
                         :class="isInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'">
-                        Наша студия работает с 2010 года. Мы знаем все тонкости обучения и выбираем лучших
+                        Наша школа работает с 2010 года. Мы знаем все тонкости обучения и выбираем лучших
                         преподавателей для своих студентов.
                     </p>
 

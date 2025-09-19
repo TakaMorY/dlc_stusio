@@ -96,7 +96,7 @@ const teachers = [
     {
         name: 'Ольга Алексеевна',
         avatar: '/images/teachers/olgateachers.jpg',
-        specialization: 'Директор и основатель студии',
+        specialization: 'Директор и основатель школы',
         description: 'Преподаватель Английского языка высшей категории. Эксперт ЕГЭ и ОГЭ.',
         experience: 15
     },

@@ -106,8 +106,7 @@
                                 DLC
                             </h1>
 
-                            <p class="mt-[18px] text-[15px] font-normal text-white/[80%]">Студия Дополнительного
-                                Образования
+                            <p class="mt-[18px] text-[15px] font-normal text-white/[80%]">Школа Английского Языка
                             </p>
                             <div class="mt-[18px] flex gap-4">
                                 <NuxtLink to="https://wa.me/c/79143348185" class="hover:scale-110" target="_blank">

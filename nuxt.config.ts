@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'DLC - школа дополнительного образования',
+      title: 'DLC - школа английского языка.',
       meta: [
         {
           name: 'description',
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:title',
-          content: 'DLC - школа дополнительного образования'
+          content: 'DLC - школа английского языка.'
         },
         {
           property: 'og:description',
