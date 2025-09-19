@@ -383,4 +383,10 @@ export default {
 .hover-text:hover::after {
     width: 100%;
 }
+
+
+
+
+
+
 </style>

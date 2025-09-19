@@ -1,7 +1,18 @@
 <template>
-    <div class="w-full py-12 md:py-24 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12">Часто задаваемые вопросы</h2>
+    <div
+        class="w-full py-12 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+        <!-- Декоративные элементы фона -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-purple-200 rounded-full opacity-20 animate-float"
+            style="animation-delay: 0.5s;"></div>
+        <div class="absolute bottom-20 right-16 w-16 h-16 bg-blue-200 rounded-full opacity-30 animate-float"
+            style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/3 left-1/4 w-12 h-12 bg-pink-200 rounded-full opacity-25 animate-float"
+            style="animation-delay: 1.5s;"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12 text-gray-800 animate-fade-in-down">
+                Часто задаваемые вопросы
+            </h2>
 
             <div class="space-y-4 md:space-y-6">
                 <div v-for="(item, index) in faqItems" :key="index"
@@ -85,20 +96,62 @@ const toggleItem = (index) => {
 </script>
 
 <style scoped>
-/* Убираем outline при фокусе */
-button:focus {
-    outline: none;
+/* Анимация плавающих кругов */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    33% {
+        transform: translateY(-10px) rotate(3deg);
+    }
+
+    66% {
+        transform: translateY(5px) rotate(-3deg);
+    }
 }
 
-/* Плавная анимация */
-.faq-item-enter-active,
-.faq-item-leave-active {
-    transition: all 0.3s ease;
+.animate-float {
+    animation: float 8s ease-in-out infinite;
 }
 
-.faq-item-enter-from,
-.faq-item-leave-to {
-    opacity: 0;
-    transform: translateY(-10px);
+/* Анимация появления заголовка */
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 0.6s ease-out forwards;
+}
+
+/* Анимация появления текста ответа */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.4s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+/* Плавная анимация для высоты */
+.transition-all {
+    transition-property: all;
 }
 </style>

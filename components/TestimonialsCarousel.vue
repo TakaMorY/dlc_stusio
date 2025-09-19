@@ -8,8 +8,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Заголовок -->
             <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 italic mb-4">Наши преподаватели</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 italic mb-4 animate-fade-in-down">Наши
+                    преподаватели</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.2s">
                     Вам не нужно переживать о квалификации педагогов — все учителя прошли строгий отбор.
                 </p>
             </div>
@@ -173,6 +174,39 @@ const getCardStyle = (index) => {
     opacity: 0;
     transform: scale(0.9);
 }
-</style>
 
- 
+
+
+/* Кастомные анимации */
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 0.6s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+}
+</style>
