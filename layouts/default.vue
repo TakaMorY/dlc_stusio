@@ -207,7 +207,7 @@
                         <div
                             class="mt-6 flex w-full flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
                             <div class="">
-                                <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Студия
+                                <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Школа
                                 </p>
                                 <ul>
                                     <li class="mt-[15px]">
