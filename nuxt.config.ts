@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'DLC - студия дополнительного образования',
+      title: 'DLC - школа дополнительного образования',
       meta: [
         {
           name: 'description',
@@ -18,11 +18,11 @@ export default defineNuxtConfig({
         },
         {
           name: 'keywords',
-          content: 'dlc, DLC, dlc надежденск, Надежденск, DLC Надежденск, Английский Надежденск, Английский, вдс-ыегвшщ, длс студия, студия английский длс'
+          content: 'dlc, DLC, dlc надежденск, Надежденск, DLC Надежденск, Английский Надежденск, Английский, вдс-ыегвшщ, длс школа,школа ангийского надега, школа ангилийского, dlc-school, студия английский длс'
         },
         {
           property: 'og:title',
-          content: 'DLC - студия дополнительного образования'
+          content: 'DLC - школа дополнительного образования'
         },
         {
           property: 'og:description',
@@ -30,17 +30,17 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content: 'https://www.dlc-studio.ru/og/og-image.jpg'
+          content: 'https://https://dlc-school.vercel.app/og/og-image.jpg'
         },
         {
           property: 'og:url',
-          content: 'https://www.dlc-studio.ru/'
+          content: 'https://https://dlc-school.vercel.app/'
         }
       ],
       link: [
         {
           rel: 'canonical',
-          href: 'https://www.dlc-studio.ru/'
+          href: 'https://https://dlc-school.vercel.app/'
         },
         {
           rel: 'icon',

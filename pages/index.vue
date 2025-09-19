@@ -30,7 +30,7 @@
 
 
                 <div class="flex-1 flex justify-center animate-float">
-                    <img src="\images\tovars\logo.jpg" alt="Logo" class="w-76 h-76 object-cover" />
+                    <img src="\images\tovars\logo2.jpg" alt="Logo" class="w-76 h-76 object-cover" />
                 </div>
             </div>
         </section>
