@@ -1,38 +1,8 @@
 <template>
     <div>
         <section
-            class="min-h-screen flex items-center justify-center bg-white px-6 py-16 transition-colors duration-300 ">
-            <!-- <div class="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center gap-12">
-
-
-                <div class="flex-1 text-center lg:text-left animate-fade-in-up">
-                    <h1 class="text-4xl sm:text-4xl font-extrabold text-black mb-4">
-                        Английский для <span
-                            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent italic font-medium">
-                            детей и подростков</span>
-                    </h1>
-                    <p class="text-lg sm:text-xl text-black dark:text-black mb-6 max-w-xl">
-                        Индивидуальные уроки с сильными
-                        преподавателями
-                    </p>
-
-
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <NuxtLink to="https://taplink.cc/dlc_studio.ndg"
-                            class="px-12 py-6 text-white text-xl bg-gradient-to-r from-purple-600 to-pink-500 click:brightness-110 hover:brightness-110 rounded-xl font-semibold transition-transform transform hover:scale-105 shadow-md">
-                            Записаться на курс
-                        </NuxtLink>
-                    </div>
-
-
-
-                </div>
-
-
-                <div class="flex-1 flex justify-center animate-float">
-                    <img src="\images\tovars\logo2.jpg" alt="Logo" class="w-76 h-76 object-cover" />
-                </div>
-            </div> -->
+            class="min-h-screen flex items-center justify-center bg-white  transition-colors duration-300 ">
+            
             <HeroSection />
         </section>
         <section class="py-48 pt-72 relative" id="services">
