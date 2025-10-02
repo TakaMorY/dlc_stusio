@@ -95,158 +95,311 @@
         <main>
             <slot />
         </main>
-        <footer class="mt-48">
 
-            <div class=" bg-gradient-to-r from-purple-600 to-pink-500 pt-9">
-                <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
-                    <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
-                        <div class="md:w-[316px]">
+        <footer class="mt-24 lg:mt-48 bg-white border-t border-gray-100 relative overflow-hidden">
+            <!-- Декоративные элементы -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div
+                    class="absolute top-0 left-0 w-32 h-32 lg:w-64 lg:h-64 bg-gradient-to-br from-purple-50 to-pink-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-60 z-0">
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 w-40 h-40 lg:w-72 lg:h-72 bg-gradient-to-tl from-blue-50 to-cyan-50 rounded-full translate-x-1/3 translate-y-1/3 opacity-40 z-0">
+                </div>
 
-                            <h1 class="text-white text-2xl font-extrabold">
-                                DLC
-                            </h1>
+                <!-- Анимированные элементы -->
+                <div
+                    class="absolute top-1/3 left-1/4 w-6 h-6 lg:w-8 lg:h-8 bg-purple-200 rounded-full opacity-30 animate-float-slow z-0">
+                </div>
+                <div
+                    class="absolute bottom-1/3 right-1/3 w-8 h-8 lg:w-12 lg:h-12 bg-blue-200 rounded-full opacity-20 animate-float z-0">
+                </div>
+                <div
+                    class="absolute top-1/2 left-3/4 w-4 h-4 lg:w-6 lg:h-6 bg-pink-200 rounded-full opacity-25 animate-pulse-slow z-0">
+                </div>
 
-                            <p class="mt-[18px] text-[15px] font-normal text-white/[80%]">Школа Английского Языка
-                            </p>
-                            <div class="mt-[18px] flex gap-4">
-                                <NuxtLink to="https://wa.me/c/79143348185" class="hover:scale-110" target="_blank">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                <!-- Волнообразные линии -->
+                <div class="absolute bottom-0 left-0 w-full h-16 lg:h-20 opacity-5 z-0">
+                    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-full">
+                        <path
+                            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                            class="fill-purple-400" opacity="0.25"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative mx-auto w-full max-w-[1200px] px-4 xl:px-0 py-8 lg:py-12 z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Блок бренда -->
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <div class="flex items-center space-x-3 mb-4 lg:mb-6">
+
+                            <div>
+                                <h2 class="text-xl lg:text-2xl font-bold text-gray-900 relative inline-block group">
+                                    DLC
+                                    <span
+                                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+                                </h2>
+                                <p class="text-gray-500 text-xs lg:text-sm">Школа английского языка</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm lg:text-[15px] leading-relaxed mb-4 lg:mb-6">
+                            Где каждый находит свой путь к свободному общению на английском языке
+                        </p>
+                        <div class="flex space-x-2 lg:space-x-3">
+                            <!-- WhatsApp -->
+                            <NuxtLink to="https://wa.me/c/79143348185"
+                                class="w-8 h-8 lg:w-10 lg:h-10 bg-gray-100 hover:bg-gradient-to-r from-green-500 to-green-600 rounded-lg lg:rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group relative overflow-hidden"
+                                target="_blank">
+                                <div class="relative z-10">
+                                    <svg width="16" height="16" lg:width="20" lg:height="20" viewBox="0 0 24 24"
+                                        fill="none"
+                                        class="text-gray-600 group-hover:text-white transition-colors duration-300">
                                         <path
                                             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-                                            fill="white" />
+                                            fill="currentColor" />
                                     </svg>
-                                </NuxtLink>
-                                <NuxtLink to="https://t.me/EHqWLw45YpdiOWFi" class="hover:scale-110" target="_blank">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.05 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.87 4.326-2.96-.924c-.643-.204-.657-.643.136-.95l11.57-4.458c.538-.196 1.006.128.832.941z"
-                                            fill="white" />
-                                    </svg>
-                                </NuxtLink>
-                                <NuxtLink to="https://taplink.cc/dlc_studio.ndg" class="hover:scale-110"
-                                    target="_blank">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <!-- Квадрат с тонкой рамкой -->
-                                        <rect x="2" y="2" width="20" height="20" fill="none" stroke="white"
-                                            stroke-width="1" rx="1" />
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                </div>
+                            </NuxtLink>
 
-                                        <!-- Буква T -->
-                                        <rect x="4" y="6" width="10" height="2" fill="white" rx="0.5" />
-                                        <!-- Верхняя перекладина (укороченная) -->
-                                        <rect x="8" y="7" width="2" height="11" fill="white" rx="0.5" /> <!-- Ножка -->
+                            <!-- Telegram -->
+                            <NuxtLink to="https://t.me/EHqWLw45YpdiOWFi"
+                                class="w-8 h-8 lg:w-10 lg:h-10 bg-gray-100 hover:bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg lg:rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group relative overflow-hidden"
+                                target="_blank">
+                                <div class="relative z-10">
+                                    <svg width="16" height="16" lg:width="20" lg:height="20" viewBox="0 0 24 24"
+                                        fill="none"
+                                        class="text-gray-600 group-hover:text-white transition-colors duration-300">
+                                        <path
+                                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.05 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.87 4.326-2.96-.924c-.643-.204-.657-.643.136-.95l11.57-4.458c.538-.196 1.006.128.832.941z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                </div>
+                            </NuxtLink>
 
-                                        <!-- Буква L -->
-                                        <rect x="14" y="6" width="2" height="12" fill="white" rx="0.5" />
-                                        <!-- Вертикаль -->
-                                        <rect x="16" y="16" width="4" height="2" fill="white" rx="0.5" />
-                                        <!-- Горизонталь -->
-                                    </svg>
-                                </NuxtLink>
-                                <!-- <a class="hover:scale-110" target="_blank" href=""><img alt="twitter icon"
-                                        loading="lazy" width="36" height="36" decoding="async" data-nimg="1"
-                                        style="color:transparent" src="https://www.englishyaari.com/img/twitter.svg" />
-                                </a>
-                                <a class="hover:scale-110" target="_blank" href="https://www.youtube.com/"><img
-                                        alt="youtube icon" loading="lazy" width="36" height="36" decoding="async"
-                                        data-nimg="1" style="color:transparent"
-                                        src="https://www.englishyaari.com/img/youtube.svg" />
-                                </a>  -->
-                            </div>
-                        </div>
-                        <div class="md:w-[316px]">
-                            <div class="mt-[23px] flex">
-                                <div class="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M20.8472 14.8554L16.4306 12.8764L16.4184 12.8707C16.1892 12.7727 15.939 12.7333 15.6907 12.7562C15.4424 12.7792 15.2037 12.8636 14.9963 13.002C14.9718 13.0181 14.9484 13.0357 14.9259 13.0545L12.6441 14.9998C11.1984 14.2976 9.70595 12.8164 9.00376 11.3895L10.9519 9.07294C10.9706 9.0495 10.9884 9.02606 11.0053 9.00075C11.1407 8.79384 11.2229 8.55667 11.2445 8.31035C11.2661 8.06402 11.2264 7.81618 11.1291 7.58887V7.57762L9.14438 3.15356C9.0157 2.85662 8.79444 2.60926 8.51362 2.44841C8.2328 2.28756 7.9075 2.22184 7.58626 2.26106C6.31592 2.42822 5.14986 3.05209 4.30588 4.01615C3.4619 4.98021 2.99771 6.21852 3.00001 7.49981C3.00001 14.9436 9.05626 20.9998 16.5 20.9998C17.7813 21.0021 19.0196 20.5379 19.9837 19.6939C20.9477 18.85 21.5716 17.6839 21.7388 16.4136C21.7781 16.0924 21.7125 15.7672 21.5518 15.4864C21.3911 15.2056 21.144 14.9843 20.8472 14.8554ZM16.5 19.4998C13.3185 19.4963 10.2682 18.2309 8.01856 15.9813C5.76888 13.7316 4.50348 10.6813 4.50001 7.49981C4.49648 6.58433 4.82631 5.69887 5.42789 5.00879C6.02947 4.3187 6.86167 3.87118 7.76907 3.74981C7.7687 3.75355 7.7687 3.75732 7.76907 3.76106L9.73782 8.16731L7.80001 10.4867C7.78034 10.5093 7.76247 10.5335 7.74657 10.5589C7.60549 10.7754 7.52273 11.0246 7.5063 11.2825C7.48988 11.5404 7.54035 11.7981 7.65282 12.0307C8.5022 13.7679 10.2525 15.5051 12.0084 16.3536C12.2428 16.465 12.502 16.5137 12.7608 16.495C13.0196 16.4762 13.2692 16.3907 13.485 16.2467C13.5091 16.2305 13.5322 16.2129 13.5544 16.1942L15.8334 14.2498L20.2397 16.2232C20.2397 16.2232 20.2472 16.2232 20.25 16.2232C20.1301 17.1319 19.6833 17.9658 18.9931 18.5689C18.3028 19.172 17.4166 19.5029 16.5 19.4998Z"
-                                            fill="white"></path>
+                            <!-- Taplink -->
+                            <NuxtLink to="https://taplink.cc/dlc_studio.ndg"
+                                class="w-8 h-8 lg:w-10 lg:h-10 bg-gray-100 hover:bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg lg:rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg group relative overflow-hidden"
+                                target="_blank">
+                                <div class="relative z-10">
+                                    <svg width="16" height="16" lg:width="20" lg:height="20" viewBox="0 0 24 24"
+                                        class="text-gray-600 group-hover:text-white transition-colors duration-300">
+                                        <rect x="4" y="4" width="16" height="16" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" rx="2" />
+                                        <rect x="7" y="8" width="8" height="1.5" fill="currentColor" rx="0.5" />
+                                        <rect x="9" y="11" width="4" height="1.5" fill="currentColor" rx="0.5" />
+                                        <rect x="7" y="14" width="6" height="1.5" fill="currentColor" rx="0.5" />
                                     </svg>
                                 </div>
-                                <div class="ml-[18px]">
-                                    <a href="tel:+79143348185" class="font-Inter text-[14px] font-medium text-white">+7
-                                        914
-                                        334-81-85</a>
-                                    <p class="font-Inter text-[12px] font-medium text-white">Наш номер телефона</p>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-purple-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 </div>
-                            </div>
-                            <div class="mt-[23px] flex">
-                                <div class="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
-                                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M19 0H1C0.801088 0 0.610322 0.0790178 0.46967 0.21967C0.329018 0.360322 0.25 0.551088 0.25 0.75V13.5C0.25 13.8978 0.408035 14.2794 0.68934 14.5607C0.970644 14.842 1.35218 15 1.75 15H18.25C18.6478 15 19.0294 14.842 19.3107 14.5607C19.592 14.2794 19.75 13.8978 19.75 13.5V0.75C19.75 0.551088 19.671 0.360322 19.5303 0.21967C19.3897 0.0790178 19.1989 0 19 0ZM10 7.98281L2.92844 1.5H17.0716L10 7.98281ZM7.25406 7.5L1.75 12.5447V2.45531L7.25406 7.5ZM8.36406 8.51719L9.48906 9.55312C9.62743 9.68014 9.80842 9.75062 9.99625 9.75062C10.1841 9.75062 10.3651 9.68014 10.5034 9.55312L11.6284 8.51719L17.0659 13.5H2.92844L8.36406 8.51719ZM12.7459 7.5L18.25 2.45438V12.5456L12.7459 7.5Z"
-                                            fill="white"></path>
-                                    </svg>
-                                </div>
-                                <div class="ml-[18px]">
-                                    <a href="mailto:dlcstudio2020@gmail.com"
-                                        class="font-Inter text-[14px] font-medium text-[#fff]">dlcstudio2020@gmail.com</a>
-                                    <p class="font-Inter text-[12px] font-medium text-[#fff]">Наша почта</p>
-                                </div>
-                            </div>
-                            <div class="mt-[23px] flex">
-                                <div class="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
-                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 4.5C8.25832 4.5 7.5333 4.71993 6.91661 5.13199C6.29993 5.54404 5.81928 6.12971 5.53545 6.81494C5.25162 7.50016 5.17736 8.25416 5.32205 8.98159C5.46675 9.70902 5.8239 10.3772 6.34835 10.9017C6.8728 11.4261 7.54098 11.7833 8.26841 11.9279C8.99584 12.0726 9.74984 11.9984 10.4351 11.7145C11.1203 11.4307 11.706 10.9501 12.118 10.3334C12.5301 9.7167 12.75 8.99168 12.75 8.25C12.75 7.25544 12.3549 6.30161 11.6517 5.59835C10.9484 4.89509 9.99456 4.5 9 4.5ZM9 10.5C8.55499 10.5 8.11998 10.368 7.74997 10.1208C7.37996 9.87357 7.09157 9.52217 6.92127 9.11104C6.75097 8.6999 6.70642 8.2475 6.79323 7.81105C6.88005 7.37459 7.09434 6.97368 7.40901 6.65901C7.72368 6.34434 8.12459 6.13005 8.56105 6.04323C8.9975 5.95642 9.4499 6.00097 9.86104 6.17127C10.2722 6.34157 10.6236 6.62996 10.8708 6.99997C11.118 7.36998 11.25 7.80499 11.25 8.25C11.25 8.84674 11.0129 9.41903 10.591 9.84099C10.169 10.2629 9.59674 10.5 9 10.5ZM9 0C6.81273 0.00248131 4.71575 0.872472 3.16911 2.41911C1.62247 3.96575 0.752481 6.06273 0.75 8.25C0.75 11.1938 2.11031 14.3138 4.6875 17.2734C5.84552 18.6108 7.14886 19.8151 8.57344 20.8641C8.69954 20.9524 8.84978 20.9998 9.00375 20.9998C9.15772 20.9998 9.30796 20.9524 9.43406 20.8641C10.856 19.8147 12.1568 18.6104 13.3125 17.2734C15.8859 14.3138 17.25 11.1938 17.25 8.25C17.2475 6.06273 16.3775 3.96575 14.8309 2.41911C13.2843 0.872472 11.1873 0.00248131 9 0ZM9 19.3125C7.45031 18.0938 2.25 13.6172 2.25 8.25C2.25 6.45979 2.96116 4.7429 4.22703 3.47703C5.4929 2.21116 7.20979 1.5 9 1.5C10.7902 1.5 12.5071 2.21116 13.773 3.47703C15.0388 4.7429 15.75 6.45979 15.75 8.25C15.75 13.6153 10.5497 18.0938 9 19.3125Z"
-                                            fill="white"></path>
-                                    </svg>
-                                </div>
-                                <div class="ml-[18px]">
-                                    <NuxtLink to="https://yandex.ru/maps/-/CHtQb8kt" target="_blank"
-                                        class="font-Inter text-[14px] font-medium text-[#fff]">ул. Пушкина, 32,
-                                        Вольно-Надеждинское, Приморский край, 692481</NuxtLink>
-                                    <p class="font-Inter text-[12px] font-medium text-white">Адресс</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="mt-6 flex w-full flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
-                            <div class="">
-                                <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Школа
-                                </p>
-                                <ul>
-                                    <li class="mt-[15px]">
-                                        <NuxtLink to="#teachers"
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
-                                            Наши преподаватели</NuxtLink>
-                                    </li>
-                                    <!-- <li class="mt-[15px]"><a
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                                            href="#rating">Отзывы</a></li> -->
-                                    <li class="mt-[15px]">
-                                        <NuxtLink to="#about"
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
-                                            О нас</NuxtLink>
-                                    </li>
-                                    <li class="mt-[15px]">
-                                        <NuxtLink to="#services"
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
-                                            Курсы</NuxtLink>
-                                    </li>
-                                    <li class="mt-[15px]">
-                                        <NuxtLink to="/privacy"
-                                            class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold">
-                                            Политика конфедициальности</NuxtLink>
-                                    </li>
-                                </ul>
-                            </div>
-
+                            </NuxtLink>
                         </div>
                     </div>
-                    <hr class="mt-[30px] text-white" />
-                    <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
-                        <p class="text-[14px] font-normal text-white md:text-[16px]">
-                            Все права защищены © 2025. Созданно
-                            <span class="text-[#c8c8c8]">♥</span>
+
+                    <!-- Контакты -->
+                    <div class="lg:col-span-1">
+                        <h3
+                            class="text-base lg:text-lg font-semibold text-gray-900 mb-4 lg:mb-6 flex items-center group cursor-pointer">
+                            <span
+                                class="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-2 group-hover:scale-150 transition-transform duration-300"></span>
+                            <span class="relative">
+                                Контакты
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+                            </span>
+                        </h3>
+                        <div class="space-y-3 lg:space-y-4">
+                            <!-- Телефон -->
+                            <div
+                                class="flex items-start space-x-3 group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md group-hover:bg-purple-100">
+                                    <svg width="14" height="14" lg:width="18" lg:height="18" viewBox="0 0 24 24"
+                                        fill="none" class="text-purple-600">
+                                        <path
+                                            d="M20.8472 14.8554L16.4306 12.8764L16.4184 12.8707C16.1892 12.7727 15.939 12.7333 15.6907 12.7562C15.4424 12.7792 15.2037 12.8636 14.9963 13.002C14.9718 13.0181 14.9484 13.0357 14.9259 13.0545L12.6441 14.9998C11.1984 14.2976 9.70595 12.8164 9.00376 11.3895L10.9519 9.07294C10.9706 9.0495 10.9884 9.02606 11.0053 9.00075C11.1407 8.79384 11.2229 8.55667 11.2445 8.31035C11.2661 8.06402 11.2264 7.81618 11.1291 7.58887V7.57762L9.14438 3.15356C9.0157 2.85662 8.79444 2.60926 8.51362 2.44841C8.2328 2.28756 7.9075 2.22184 7.58626 2.26106C6.31592 2.42822 5.14986 3.05209 4.30588 4.01615C3.4619 4.98021 2.99771 6.21852 3.00001 7.49981C3.00001 14.9436 9.05626 20.9998 16.5 20.9998C17.7813 21.0021 19.0196 20.5379 19.9837 19.6939C20.9477 18.85 21.5716 17.6839 21.7388 16.4136C21.7781 16.0924 21.7125 15.7672 21.5518 15.4864C21.3911 15.2056 21.144 14.9843 20.8472 14.8554Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <a href="tel:+79143348185"
+                                        class="text-gray-700 text-sm lg:text-base font-medium transition-colors duration-300 relative inline-block contact-link group-hover:text-purple-600">
+                                        +7 914 334-81-85
+                                    </a>
+                                    <p class="text-gray-500 text-xs lg:text-sm mt-1">Наш номер телефона</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div
+                                class="flex items-start space-x-3 group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md group-hover:bg-blue-100">
+                                    <svg width="12" height="12" lg:width="16" lg:height="16" viewBox="0 0 24 24"
+                                        fill="none" class="text-blue-600">
+                                        <path
+                                            d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19.6 8.25L12.53 12.67C12.21 12.87 11.79 12.87 11.47 12.67L4.4 8.25C4.15 8.09 4 7.82 4 7.53C4 6.86 4.73 6.46 5.3 6.81L12 11L18.7 6.81C19.27 6.46 20 6.86 20 7.53C20 7.82 19.85 8.09 19.6 8.25Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <a href="mailto:dlcstudio2020@gmail.com"
+                                        class="text-gray-700 text-sm lg:text-base font-medium transition-colors duration-300 relative inline-block contact-link group-hover:text-blue-600 break-all">
+                                        dlcstudio2020@gmail.com
+                                    </a>
+                                    <p class="text-gray-500 text-xs lg:text-sm mt-1">Наша почта</p>
+                                </div>
+                            </div>
+
+                            <!-- Адрес -->
+                            <div
+                                class="flex items-start space-x-3 group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                                <div
+                                    class="w-8 h-8 lg:w-10 lg:h-10 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md group-hover:bg-green-100">
+                                    <svg width="12" height="12" lg:width="16" lg:height="16" viewBox="0 0 24 24"
+                                        fill="none" class="text-green-600">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <NuxtLink to="https://yandex.ru/maps/-/CHtQb8kt" target="_blank"
+                                        class="text-gray-700 text-sm lg:text-base font-medium transition-colors duration-300 relative inline-block contact-link group-hover:text-green-600">
+                                        ул. Пушкина, 32
+                                    </NuxtLink>
+                                    <p class="text-gray-500 text-xs lg:text-sm mt-1">Вольно-Надеждинское</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Навигация -->
+                    <div class="lg:col-span-1">
+                        <h3
+                            class="text-base lg:text-lg font-semibold text-gray-900 mb-4 lg:mb-6 flex items-center group cursor-pointer">
+                            <span
+                                class="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-2 group-hover:scale-150 transition-transform duration-300"></span>
+                            <span class="relative">
+                                Школа
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+                            </span>
+                        </h3>
+                        <ul class="space-y-2 lg:space-y-3">
+                            <li class="group">
+                                <NuxtLink to="#teachers"
+                                    class="text-gray-600 text-sm lg:text-base hover:text-purple-600 transition-all duration-300 group-hover:translate-x-2 flex items-center relative overflow-hidden py-1 lg:py-2">
+                                    <span
+                                        class="w-1.5 h-1.5 bg-gray-300 rounded-full mr-2 lg:mr-3 group-hover:bg-purple-500 transition-all duration-300 group-hover:scale-150"></span>
+                                    <span class="relative">
+                                        Преподаватели
+                                        <span
+                                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300 delay-100"></span>
+                                    </span>
+                                </NuxtLink>
+                            </li>
+                            <li class="group">
+                                <NuxtLink to="#about"
+                                    class="text-gray-600 text-sm lg:text-base hover:text-purple-600 transition-all duration-300 group-hover:translate-x-2 flex items-center relative overflow-hidden py-1 lg:py-2">
+                                    <span
+                                        class="w-1.5 h-1.5 bg-gray-300 rounded-full mr-2 lg:mr-3 group-hover:bg-purple-500 transition-all duration-300 group-hover:scale-150"></span>
+                                    <span class="relative">
+                                        О нас
+                                        <span
+                                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300 delay-100"></span>
+                                    </span>
+                                </NuxtLink>
+                            </li>
+                            <li class="group">
+                                <NuxtLink to="#services"
+                                    class="text-gray-600 text-sm lg:text-base hover:text-purple-600 transition-all duration-300 group-hover:translate-x-2 flex items-center relative overflow-hidden py-1 lg:py-2">
+                                    <span
+                                        class="w-1.5 h-1.5 bg-gray-300 rounded-full mr-2 lg:mr-3 group-hover:bg-purple-500 transition-all duration-300 group-hover:scale-150"></span>
+                                    <span class="relative">
+                                        Курсы
+                                        <span
+                                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300 delay-100"></span>
+                                    </span>
+                                </NuxtLink>
+                            </li>
+                            <li class="group">
+                                <NuxtLink to="/privacy"
+                                    class="text-gray-600 text-sm lg:text-base hover:text-purple-600 transition-all duration-300 group-hover:translate-x-2 flex items-center relative overflow-hidden py-1 lg:py-2">
+                                    <span
+                                        class="w-1.5 h-1.5 bg-gray-300 rounded-full mr-2 lg:mr-3 group-hover:bg-purple-500 transition-all duration-300 group-hover:scale-150"></span>
+                                    <span class="relative">
+                                        Конфиденциальность
+                                        <span
+                                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300 delay-100"></span>
+                                    </span>
+                                </NuxtLink>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Дополнительная информация -->
+                    <div class="md:col-span-2 lg:col-span-1">
+                        <h3
+                            class="text-base lg:text-lg font-semibold text-gray-900 mb-4 lg:mb-6 flex items-center group cursor-pointer">
+                            <span
+                                class="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-2 group-hover:scale-150 transition-transform duration-300"></span>
+                            <span class="relative">
+                                Обучение
+                                <span
+                                    class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+                            </span>
+                        </h3>
+                        <div
+                            class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl lg:rounded-2xl p-4 lg:p-6 border border-purple-100 relative overflow-hidden group hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1">
+                            <div
+                                class="absolute -right-3 -top-3 w-12 h-12 lg:w-20 lg:h-20 bg-purple-200 rounded-full opacity-20 group-hover:scale-150 transition-transform duration-1000">
+                            </div>
+                            <div
+                                class="absolute -left-3 -bottom-3 w-10 h-10 lg:w-16 lg:h-16 bg-pink-200 rounded-full opacity-20 group-hover:scale-150 transition-transform duration-1000 delay-200">
+                            </div>
+                            <div class="relative z-10">
+                                <h4
+                                    class="font-semibold text-gray-900 text-sm lg:text-base mb-2 group-hover:text-purple-700 transition-colors duration-300">
+                                    Начните сегодня</h4>
+                                <p
+                                    class="text-gray-600 text-xs lg:text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                                    Оцените наш подход к обучению английскому языку.
+                                </p>
+                                <button
+                                    class="mt-3 lg:mt-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-2 lg:px-4 lg:py-2 rounded-lg text-xs lg:text-sm font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full lg:w-auto">
+                                    Записаться
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Нижняя часть -->
+                <div class="border-t border-gray-200 mt-8 lg:mt-12 pt-6 lg:pt-8 relative">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-3 lg:space-y-0">
+                        <p class="text-gray-600 text-xs lg:text-sm text-center md:text-left">
+                            Все права защищены © 2025. Создано с
+                            <span class="text-pink-500 mx-1 animate-pulse">♥</span>
+                            командой
                             <NuxtLink to="https://nimble-sites.vercel.app"
-                                class="hover:text-[#f9d1f9] transition-colors">
-                                NimbleSites</NuxtLink>.
+                                class="text-purple-600 hover:text-purple-500 font-medium transition-colors duration-300 relative contact-link ml-1">
+                                NimbleSites
+                            </NuxtLink>
                         </p>
+                        <div class="flex items-center space-x-4 lg:space-x-6 text-xs lg:text-sm text-gray-500">
+                            <NuxtLink to="/privacy"
+                                class="hover:text-gray-700 transition-colors duration-300 relative contact-link text-center">
+                                Политика конфиденциальности
+                            </NuxtLink>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -276,6 +429,8 @@ export default {
         }
     }
 }
+
+
 </script>
 
 
@@ -388,4 +543,108 @@ export default {
 
 
 
+
+/* Анимации для плавающих элементов */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes float-slow {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes pulse-slow {
+
+    0%,
+    100% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes tilt {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(1deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.animate-tilt {
+    animation: tilt 10s ease-in-out infinite;
+}
+
+/* Подчеркивания для ссылок */
+.contact-link {
+    position: relative;
+    display: inline-block;
+}
+
+.contact-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(to right, #8b5cf6, #ec4899);
+    transition: width 0.3s ease;
+}
+
+.contact-link:hover::after {
+    width: 100%;
+}
+
+/* Плавные переходы для всех элементов */
+* {
+    transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Улучшенная поддержка мобильных */
+@media (max-width: 768px) {
+    .break-all {
+        word-break: break-all;
+    }
+}
 </style>
