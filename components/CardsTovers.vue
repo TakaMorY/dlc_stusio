@@ -4,13 +4,13 @@
         <!-- Улучшенные декоративные элементы -->
         <div class="absolute inset-0 overflow-hidden">
             <div
-                class="absolute top-10 left-10 w-20 h-20 md:w-32 md:h-32 bg-purple-200 rounded-full opacity-20 animate-float">
+                class="absolute top-10 left-10 w-20 h-20 md:w-32 md:h-32 bg-purple-400 rounded-full opacity-20 animate-float">
             </div>
-            <div class="absolute bottom-20 right-16 w-16 h-16 md:w-24 md:h-24 bg-blue-200 rounded-full opacity-30 animate-float"
+            <div class="absolute bottom-20 right-16 w-16 h-16 md:w-24 md:h-24 bg-blue-400 rounded-full opacity-30 animate-float"
                 style="animation-delay: 2s;"></div>
-            <div class="absolute top-1/3 left-1/4 w-20 h-20 md:w-28 md:h-28 bg-pink-200 rounded-full opacity-25 animate-float"
+            <div class="absolute top-1/3 left-1/4 w-20 h-20 md:w-28 md:h-28 bg-pink-400 rounded-full opacity-25 animate-float"
                 style="animation-delay: 4s;"></div>
-            <div class="absolute top-2/3 right-1/3 w-16 h-16 md:w-20 md:h-20 bg-purple-300 rounded-full opacity-20 animate-float"
+            <div class="absolute top-2/3 right-1/3 w-16 h-16 md:w-20 md:h-20 bg-purple-400 rounded-full opacity-20 animate-float"
                 style="animation-delay: 1s;"></div>
 
             <!-- Волны -->
@@ -368,14 +368,14 @@ const startAutoScroll = () => {
             } else {
                 scrollToSlide(0)
             }
-        }, 5000)
+        }, 7000)
     }
 
     // Перезапускаем автоскролл через 3 секунды после взаимодействия
     setTimeout(() => {
         isUserInteracting.value = false
         startAutoScroll()
-    }, 3000)
+    }, 7000)
 }
 
 // Добавляем Resize Observer для пересчета при изменении размера окна
