@@ -1,8 +1,7 @@
 <template>
     <div>
-        <section
-            class="min-h-screen flex items-center justify-center bg-white  transition-colors duration-300 ">
-            
+        <section class="min-h-screen flex items-center justify-center bg-white  transition-colors duration-300 ">
+
             <HeroSection />
         </section>
         <section class="py-48 pt-72 relative" id="services">
@@ -15,7 +14,7 @@
             <CardsTovars />
 
 
-            
+
 
         </section>
         <section id="about" class="mx-auto mt-24 max-w-[1440px] min-w-[280px] py-8 px-4 sm:px-8 md:px-10 lg:0px-20 ">
@@ -76,6 +75,7 @@
         <section>
             <FAQ />
         </section>
+        <Analytics />
 
 
 
@@ -90,4 +90,5 @@ import TestimonialsCarousel from '@/components/TestimonialsCarousel.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import teacher from '@/components/teacher.vue';
 import CardsTovars from '@/components/CardsTovers.vue';
+import { Analytics } from '@vercel/analytics/nuxt';
 </script>
