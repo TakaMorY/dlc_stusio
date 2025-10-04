@@ -330,18 +330,7 @@
                                     </span>
                                 </NuxtLink>
                             </li>
-                            <li class="group">
-                                <NuxtLink to="/privacy"
-                                    class="text-gray-600 text-sm lg:text-base hover:text-purple-600 transition-all duration-300 group-hover:translate-x-2 flex items-center relative overflow-hidden py-1 lg:py-2">
-                                    <span
-                                        class="w-1.5 h-1.5 bg-gray-300 rounded-full mr-2 lg:mr-3 group-hover:bg-purple-500 transition-all duration-300 group-hover:scale-150"></span>
-                                    <span class="relative">
-                                        Конфиденциальность
-                                        <span
-                                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300 delay-100"></span>
-                                    </span>
-                                </NuxtLink>
-                            </li>
+
                         </ul>
                     </div>
 
@@ -368,15 +357,15 @@
                             <div class="relative z-10">
                                 <h4
                                     class="font-semibold text-gray-900 text-sm lg:text-base mb-2 group-hover:text-purple-700 transition-colors duration-300">
-                                    Начните сегодня</h4>
+                                    Понравилась школа?</h4>
                                 <p
-                                    class="text-gray-600 text-xs lg:text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                                    class="text-gray-600 mb-2 text-xs lg:text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                                     Оцените наш подход к обучению английскому языку.
                                 </p>
-                                <button
+                                <NuxtLink to="https://2gis.ru/vladivostok/firm/70000001045724848/tab/reviews"
                                     class="mt-3 lg:mt-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-2 lg:px-4 lg:py-2 rounded-lg text-xs lg:text-sm font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full lg:w-auto">
-                                    Записаться
-                                </button>
+                                    Оставить отзыв на 2Гис
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>

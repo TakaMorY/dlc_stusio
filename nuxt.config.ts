@@ -30,17 +30,17 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content: 'https://https://dlc-school.vercel.app/og/og-image.jpg'
+          content: 'https://dlc-school.vercel.app/og/og-image.jpg'
         },
         {
           property: 'og:url',
-          content: 'https://https://dlc-school.vercel.app/'
+          content: 'https://dlc-school.vercel.app/'
         }
       ],
       link: [
         {
           rel: 'canonical',
-          href: 'https://https://dlc-school.vercel.app/'
+          href: 'https://dlc-school.vercel.app/'
         },
         {
           rel: 'icon',
