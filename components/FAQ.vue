@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full  px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+        class="w-full py-12 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
         <!-- Декоративные элементы фона -->
         <div class="absolute top-10 left-10 w-20 h-20 bg-purple-200 rounded-full opacity-20 animate-float"
             style="animation-delay: 0.5s;"></div>
