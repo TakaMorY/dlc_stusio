@@ -100,27 +100,6 @@ const teachers = [
         description: 'Преподаватель Английского языка высшей категории. Эксперт ЕГЭ и ОГЭ.',
         experience: 15
     },
-    {
-        name: 'Наталья Александровна',
-        avatar: '/images/teachers/natalya.jpg',
-        specialization: 'Детский психолог, гештальт-терапевт, нейропсихолог, психолог-педагог, арт-терапевт',
-        description: 'Специалист по детско - родительским отношениям. Преподаватель школы раннего развития.',
-        experience: 10
-    },
-    {
-        name: 'Мирослава Демьяновна',
-        avatar: '/images/teachers/admin.jpg',
-        specialization: 'Администратор студии',
-        description: '',
-        experience: 3
-    },
-    {
-        name: 'Дарья Игоревна',
-        avatar: '/images/teachers/dariai.jpg',
-        specialization: 'Арт - мастерская',
-        description: 'Преподаватель арт - мастерской "Волшебный сундучок".',
-        experience: 5
-    },
 ]
 
 const activeIndex = ref(1)
