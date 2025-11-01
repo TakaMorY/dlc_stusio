@@ -96,7 +96,7 @@
             <slot />
         </main>
 
-        <footer class="lg:mt-48 bg-white border-t border-gray-100 relative overflow-hidden">
+        <footer class="bg-white border-t border-gray-100 relative overflow-hidden">
             <!-- Декоративные элементы -->
             <div class="absolute inset-0 overflow-hidden">
                 <div
